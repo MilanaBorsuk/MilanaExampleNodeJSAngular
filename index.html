@@ -1,13 +1,23 @@
-<html>
+<!doctype html>
+<html ng-app='app'>
 
 <head>
-    <title>Milana Example</title> 
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script>
+  <script src="app.js"></script>
+  <script src="main-controller.js"></script>
+
 </head>
 
 <body>
-    <div>
-        Hello Milana
-    </div>
+  <div ng-controller="main-controller">
+    <label>{{name}}</label>
+    <input type="text" ng-model="yourName" placeholder="Enter a name here">
+    <hr>
+    <h1>Hello {{yourName}}!</h1>
+    <div bold>ALEX</div>
+
+    <div bold>Milana</div>
+  </div>
 </body>
 
 </html>
